@@ -29,7 +29,7 @@ int main() {
     int paint_max = 0; // 그림의 최대값
 
     for(int i = 0;i<N;i++) {
-        for(int k = 0;k < M;k++) {
+        for(int k = 0;k < M;k++) { // 초기 좌표값이 지정되지 않았다 => for문으로 돌려서 진행 (N*M * N*M)
             if(board[i][k] == 0 || vis[i][k]) {
                 continue;
             } // 칸의 값이 0이거나 이미 방문한 좌표라면 제외
