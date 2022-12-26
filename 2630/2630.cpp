@@ -29,13 +29,13 @@ void solve(int x,int y,int n) {
         }
     }
 
-    if(div) {
+    if(div) { // need to div
         solve(x,y,n/2);
         solve(x,y+n/2,n/2);
         solve(x+n/2,y,n/2);
         solve(x+n/2,y+n/2,n/2);
     }
-    else {
+    else { // not div (check color)
         if(sim == 0) {
             white_paper++;
         }
