@@ -16,9 +16,9 @@ int main() {
     board[1] = 1;
 
     for(int i = 2;i<=N;i++) {
-        board[i] = board[i-1] + 1;
+        board[i] = board[i-1] + 1; // 원래는 1씩 늘어나니까 + 1 항이 늘어남
         for(int j = 1; j*j <= i;j++) {
-            board[i] = min(board[i], board[i-(j*j)] + 1);
+            board[i] = min(board[i], board[i-(j*j)] + 1); // 최솟값 갱신 - 제곱수만큼 뺀 dp 테이블 값 이용
         }
     }
 

@@ -39,7 +39,7 @@ int main() {
         }
 
         if(flag) { // 고장난 버튼이 없음 => 이동
-            if(ans > check_num.size() + abs(N - pos)) {
+            if(ans > check_num.size() + abs(N - pos)) { // 최솟갑 갱신
                 ans = check_num.size() + abs(N - pos);
             }
         }
